@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import AppHeader from '../../components/AppHeader/AppHeader';
 import MoodSelector from '../../components/MoodSelector/MoodSelector';
 import DiaryEntry from '../../components/DiaryEntry/DiaryEntry';
 
@@ -15,6 +16,7 @@ const EntryPage = () => {
 
   return (
       <section className="entry-section">
+        <AppHeader />
         <MoodSelector selectedMood={mood} onSelect={setMood} />
         <DiaryEntry value={entry} onChange={setEntry} />
         <div className="submit-btn-container">
