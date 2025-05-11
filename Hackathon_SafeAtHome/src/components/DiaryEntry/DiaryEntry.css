@@ -1,0 +1,22 @@
+.diary-container {
+    margin-top: 2rem;
+    padding: 0 1.5rem;
+    text-align: right;
+  }
+  
+  .diary-label {
+    display: block;
+    font-weight: 500;
+    color: #1e3a8a;
+    margin-bottom: 0.5rem;
+  }
+  
+  .diary-textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    resize: none;
+    font-size: 1rem;
+    font-family: inherit;
+  }  
