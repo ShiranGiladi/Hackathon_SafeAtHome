@@ -34,11 +34,59 @@
 
 // export default App
 
-import React from 'react';
-import EntryPage from './pages/EntryPage/EntryPage.jsx';
+// import React from 'react';
+// import EntryPage from './pages/EntryPage/EntryPage.jsx';
 
-const App = () => {
-  return <EntryPage />;
-};
+// const App = () => {
+//   return <EntryPage />;
+// };
+
+// export default App;
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+import EntryPage from './pages/EntryPage/EntryPage.jsx';
+import Login from './pages/Login/Login.jsx';
+import Home from './pages/Home/Home.jsx';
+import Navbar from './components/Navbar/Navber.jsx';
+
+function App() {
+  return (
+    <div className="App">
+      <BrowserRouter>
+        <div className='pages'>
+          <Routes>
+            <Route
+              path="/"
+              element={ 
+                <div>
+                  <Login />
+                </div>
+              }
+            />
+            <Route
+              path="/home"
+              element={ 
+                <div>
+                  <Navbar />
+                  <Home />
+                </div>
+              }
+            />
+            <Route
+              path="/entryPage"
+              element={ 
+                <div>
+                  <Navbar />
+                  <EntryPage />
+                </div>
+              }
+            />
+          </Routes>
+        </div>
+      </BrowserRouter>
+    </div>
+  );
+}
 
 export default App;

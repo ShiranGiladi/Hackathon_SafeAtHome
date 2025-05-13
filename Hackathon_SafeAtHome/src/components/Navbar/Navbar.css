@@ -1,0 +1,14 @@
+.custom-navbar {
+  background-color: #ECECEC;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .navbar-logo {
+  width: 140px;
+  height: 40px;
+} */
