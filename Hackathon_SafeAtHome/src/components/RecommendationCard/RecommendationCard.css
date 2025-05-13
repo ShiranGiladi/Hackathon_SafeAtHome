@@ -1,0 +1,23 @@
+.recommandation-card {
+    background-color: #fbe2b7;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    width: 90%;
+    text-align: center;
+    direction: rtl;
+  }
+  
+  .recommandation-card h2 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .recommandation-card p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
